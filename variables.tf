@@ -80,7 +80,6 @@ variable cert_manager_email {
   default = "pcommerce@xessam.net"
 }
 
-
 variable cognito_users {
   type    = list(map(string))
   default = []

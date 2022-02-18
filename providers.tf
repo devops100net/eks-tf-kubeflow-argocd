@@ -1,15 +1,7 @@
 terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-    }
-    random = {
-      source = "hashicorp/random"
-    }
-  }
-
-  cloud {
+  backend "remote" {
     organization = "Devops100"
+
     workspaces {
       name = "gh-actions"
     }
@@ -17,7 +9,6 @@ terraform {
 }
 
 provider aws {
-  version = "2.66"
   region  = var.aws_region
 }
 
