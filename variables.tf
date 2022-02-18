@@ -24,7 +24,7 @@ variable aws_region {
 # Name of EKS cluster (Not use underscore in naming. S3 backet name issue)
 variable cluster_name {
   description = "Name of cluster"
-  default     = "devops10020220218"
+  default     = "devops20220218"
 }
 
 variable availability_zones {

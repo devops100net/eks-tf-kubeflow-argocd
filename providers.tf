@@ -1,3 +1,21 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+    random = {
+      source = "hashicorp/random"
+    }
+  }
+
+  cloud {
+    organization = "Devops100"
+    workspaces {
+      name = "gh-actions"
+    }
+  }
+}
+
 provider aws {
   version = "2.66"
   region  = var.aws_region
