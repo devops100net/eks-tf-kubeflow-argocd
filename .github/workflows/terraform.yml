@@ -77,7 +77,7 @@ jobs:
 
 ### UnComment below if Infrastructure should be destroyed
 
-##      - name: Terraform Destroy
+##      - name: Terraform Destroy 2
 ##        id: destr
 ##        if: github.ref == 'refs/heads/master' && github.event_name == 'push'
 ##        run: terraform destroy -auto-approve 
